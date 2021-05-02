@@ -1,0 +1,50 @@
+.navbar{
+
+    width: 100%;
+    height: 10%;
+    box-shadow: 0 2px 4px 0 rgba($color: #000000, $alpha: .1);
+    font-family: $primary_font;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    .wrapper{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo{
+            width: 8rem;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .nav_links{
+
+            width: 30%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .nav_link{
+
+                list-style: none;
+
+                a{
+                    color: black;
+                }
+            }
+
+        }
+    }
+
+}

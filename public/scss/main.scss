@@ -1,0 +1,24 @@
+@import './utils/variables';
+@import './base/reset';
+@import './utils/mixins';
+
+
+// Layout
+@import './layout/header';
+@import './layout/footer';
+
+
+// Components
+
+
+// pages
+@import './pages/directory' ;
+@import './pages/homepage';
+
+.main{
+
+    width: 80%;
+    margin: auto;
+    height: 100%;
+
+}

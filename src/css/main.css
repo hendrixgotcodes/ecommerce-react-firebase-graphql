@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  transition: all 0.4s ease-in-out;
+  position: relative; }
+
+#root, body, html {
+  height: 100vh; }
+
+a {
+  text-decoration: none; }
+
+.App {
+  width: 100%;
+  height: 100%;
+  padding-top: 4.7%; }
+
+.navbar {
+  width: 100%;
+  height: 10%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
+  z-index: 1; }
+  .navbar .wrapper {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .navbar .wrapper .logo {
+      width: 8rem; }
+      .navbar .wrapper .logo img {
+        width: 100%; }
+    .navbar .wrapper .nav_links {
+      width: 30%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .navbar .wrapper .nav_links .nav_link {
+        list-style: none; }
+        .navbar .wrapper .nav_links .nav_link a {
+          color: black; }
+
+.footer {
+  width: 100%;
+  height: 10%; }
+  .footer .wrapper {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto; }
+
+.directory {
+  width: 100%;
+  height: 100%; }
+  .directory .wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .directory .item {
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+    .directory .item::after {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background-color: rgba(0, 0, 0, 0.3);
+      top: 0;
+      left: 0; }
+    .directory .item a {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-decoration: none;
+      background-color: white;
+      padding: .5rem;
+      border: 1px solid black;
+      color: black;
+      z-index: 2; }
+
+.homepage {
+  width: 100%;
+  height: 100%; }
+
+.main {
+  width: 80%;
+  margin: auto;
+  height: 100%; }
