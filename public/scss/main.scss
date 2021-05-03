@@ -14,11 +14,12 @@
 // pages
 @import './pages/directory' ;
 @import './pages/homepage';
+@import './pages/register';
 
 .main{
 
     width: 80%;
     margin: auto;
-    height: 100%;
+    height: fit-content;
 
 }

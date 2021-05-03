@@ -4,13 +4,20 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   transition: all 0.4s ease-in-out;
-  position: relative; }
+  position: relative;
+  outline: none; }
 
 #root, body, html {
   height: 100vh; }
 
 a {
   text-decoration: none; }
+
+input {
+  transition: box-shadow .3s ease-in-out; }
+
+button {
+  transition: color .3s ease-in-out, background-color .3s ease-in-out; }
 
 .App {
   width: 100%;
@@ -41,14 +48,26 @@ a {
       .navbar .wrapper .logo img {
         width: 100%; }
     .navbar .wrapper .nav_links {
-      width: 30%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center; }
+      display: flex; }
       .navbar .wrapper .nav_links .nav_link {
         list-style: none; }
         .navbar .wrapper .nav_links .nav_link a {
-          color: black; }
+          padding: .5rem;
+          color: black;
+          text-transform: uppercase;
+          font-weight: 600; }
+    .navbar .wrapper .user_profile {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .navbar .wrapper .user_profile .btn---logout {
+        padding: .3rem 1rem;
+        background-color: #fff;
+        color: #1F4056;
+        border: 1px solid #1F4056;
+        margin-left: .5rem;
+        border-radius: 3px;
+        cursor: pointer; }
 
 .footer {
   width: 100%;
@@ -59,7 +78,8 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto; }
+    margin: auto;
+    color: #1F4056; }
 
 .directory {
   width: 100%;
@@ -98,9 +118,61 @@ a {
 
 .homepage {
   width: 100%;
-  height: 100%; }
+  height: 90vh; }
+
+.page---registration, .page---signin {
+  text-align: center;
+  width: 100%; }
+  .page---registration .wrapper, .page---signin .wrapper {
+    width: 50%;
+    margin: auto;
+    padding: 1rem; }
+    .page---registration .wrapper h1, .page---signin .wrapper h1 {
+      color: #1F4056; }
+    .page---registration .wrapper .form, .page---signin .wrapper .form {
+      margin: 1rem 0;
+      width: 100%;
+      text-align: left; }
+      .page---registration .wrapper .form .fm_label, .page---signin .wrapper .form .fm_label {
+        width: 100%;
+        display: block;
+        margin-bottom: 1rem; }
+      .page---registration .wrapper .form .fm_input, .page---signin .wrapper .form .fm_input {
+        display: block;
+        width: 100%;
+        padding: .4rem;
+        border: 1px solid black;
+        border-radius: 3px;
+        margin-top: .3rem; }
+        .page---registration .wrapper .form .fm_input:focus, .page---signin .wrapper .form .fm_input:focus {
+          box-shadow: 0px 0px 0px 3px rgba(31, 64, 86, 0.5);
+          border: 1px solid #1F4056; }
+      .page---registration .wrapper .form .btn, .page---signin .wrapper .form .btn {
+        padding: .4rem;
+        width: 100%;
+        border: 1px solid #000;
+        border-radius: 3px;
+        background-color: #000;
+        color: #fff;
+        margin-bottom: .5rem; }
+        .page---registration .wrapper .form .btn:hover, .page---signin .wrapper .form .btn:hover {
+          background-color: #fff;
+          color: #000; }
+      .page---registration .wrapper .form .btn---google, .page---signin .wrapper .form .btn---google {
+        padding: .4rem;
+        width: 100%;
+        background-color: #1F4056;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #1F4056;
+        border-radius: 3px; }
+        .page---registration .wrapper .form .btn---google:hover, .page---signin .wrapper .form .btn---google:hover {
+          background-color: #fff;
+          color: #1F4056; }
 
 .main {
   width: 80%;
   margin: auto;
-  height: 100%; }
+  height: fit-content; }

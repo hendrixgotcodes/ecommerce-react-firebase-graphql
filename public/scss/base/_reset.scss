@@ -5,6 +5,7 @@
     font-family: $primary_font;
     transition: $transition;
     position: relative;
+    outline: none;
 }
 
 #root,body, html{
@@ -15,6 +16,14 @@
 
 a{
     text-decoration: none;
+}
+
+input{
+    transition: box-shadow .3s ease-in-out;
+}
+
+button{
+    transition: color .3s ease-in-out, background-color .3s ease-in-out;
 }
 
 .App{
